@@ -1,29 +1,15 @@
-'use client';
-import {useChat} from 'ai/react'
+import { Specialists } from "@/components/home/Specialists";
+import React from "react";
 
-export default function Chat() {
-  const {messages, input, handleInputChange, handleSubmit} = useChat();
-  
+export default function Home() {
   return (
-    <div className='chatContainer'>
-      <div className='messageContainer'>
-        {
-          messages.map(m => (
-            <div key = {m.id} className={m.role === 'assistant' ? 'systemMessage' : 'userMessage'} >
-              <div className='messageContent'> {m.content} </div>
-              </div>
-          ))
-        }
-
-      <form onSubmit={handleSubmit} className="inputForm" >
-          <input value={input} onChange={handleInputChange} placeholder="What problem are you facing?" className="inputField">
-
-          </input>
-      </form>
+    <main className="h-[100vh] w-100 flex items-center justify-center flex-col p-10">
+      <div className="text-3xl">
+        Welcome to your personal health assistant app.
       </div>
-    </div>
+      <div className="text-xl py-10">Choose Your Doctor</div>
+
+      <Specialists />
+    </main>
   );
 }
-
-
-// pandas for dataframe and numpy data rays

@@ -16,13 +16,6 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-}
-
 .chatContainer {
   display: flex;
   flex-direction: column;
@@ -51,13 +44,15 @@ body {
 }
 
 .systemMessage {
-  background-color: #e1f5fe;
   align-self: flex-start;
+  background-color: grey;
+  margin: 20px;
 }
 
 .userMessage {
-  background-color: #b3e5fc;
+  background-color: rgb(0, 0, 0);
   align-self: flex-end;
+  margin: 20px;
 }
 
 .messageContent {
@@ -81,7 +76,7 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   cursor: pointer;
 }
