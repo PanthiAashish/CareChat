@@ -1,4 +1,4 @@
-# GPT Dream Interpreter
+# GPT Disease Interpreter
 
 ## Installing Dependencies
 
