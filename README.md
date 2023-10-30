@@ -1,4 +1,5 @@
 # GPT Disease Interpreter
+# I made this project for the VandyHacks(a hackathon in Vanderbilt). This uses OpenAI's API to provide specialized response to the health issues of the user.
 
 ## Installing Dependencies
 
